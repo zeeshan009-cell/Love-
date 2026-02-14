@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Arshi ❤️</title>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+        margin: 10px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #yesBtn {
+        background-color: #ff4b5c;
+        color: white;
+    }
+    #noBtn {
+        background-color: white;
+        color: #ff4b5c;
+    }
+    button:hover {
+        transform: scale(1.1);
+    }
+    #response {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h1>Arshi, will you be my Valentine? 💖</h1>
+
+<div>
+    <button id="yesBtn" onclick="showYes()">Yes 💘</button>
+    <button id="noBtn" onclick="showNo()">No 😜</button>
+</div>
+
+<div id="response"></div>
+
+<script>
+function showYes() {
+    document.getElementById("response").innerHTML = 
+    "YAYYY 🥹❤️ You just made me the happiest person alive!";
+}
+
+function showNo() {
+    document.getElementById("response").innerHTML = 
+    "Are you sure? 😏 I’ll keep asking till you say yes 💕";
+}
+</script>
+
+</body>
+</html>
